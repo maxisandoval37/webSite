@@ -1,0 +1,47 @@
+@media (min-width:1920px){.content.bg .content-bg img{width:100%}
+}
+@media (max-width:1200px){.content.bg .content-bg img{width:100%}
+.content .content-desc{margin-bottom:30px}
+}
+@media (min-width:768px) and (max-width:992px){.navbar-header .navbar-brand{float:none;}
+.header.navbar .navbar-nav > li > a{padding:25px 10px}
+.header.navbar.navbar-small .navbar-nav > li > a{padding-left:6px;padding-right:6px}
+.banner-content h1{font-size:48px}
+.banner-content h3{font-size:24px}
+.banner-content h1,
+.banner-content h2,
+.banner-content h3,
+.banner-content h4{margin:0 0 15px}
+.banner-content p{margin-bottom:30px}
+}
+@media (max-width:767px){.header.navbar .navbar-nav > li > a{padding:10px 15px}
+.header.navbar-small .navbar-collapse,
+.navbar-collapse{background:#000;background:rgba(0, 0, 0, .9)}
+.header.navbar-small .navbar-collapse .navbar-nav > li > a{color:#8F8E8E}
+.header.navbar.navbar-small .navbar-nav > li > a{padding:10px 15px}
+.navbar-nav > li.dropdown:focus > .dropdown-menu,
+.navbar-nav > li.dropdown:hover > .dropdown-menu{display:none}
+.navbar-nav > li.dropdown.open:hover > .dropdown-menu,
+.navbar-nav > li.dropdown.open > .dropdown-menu{display:block;-webkit-animation:none;animation:none}
+.navbar-nav > li.dropdown > .dropdown-menu{border-top:1px solid #444;border-bottom:1px solid #444}
+.navbar-default .navbar-nav > li.dropdown > .dropdown-menu,
+.navbar-default .navbar-nav > li.dropdown > .dropdown-menu > li + li{border-color:#e7e7e7}
+.banner-content h1{font-size:36px}
+.banner-content h3{font-size:18px}
+.banner-content h1,
+.banner-content h2,
+.banner-content h3,
+.banner-content h4{margin:0 0 15px}
+.banner-content p{margin-bottom:30px}
+.counters-col + .counters-col{border:none;border-top:1px solid rgba(255, 255, 255, .2);margin-top:15px;padding-top:15px!important}
+.about-bg,
+.about-bg:before{background-image:none;background:none;}
+.ourteam{margin-bottom:30px}
+.advertising .btn{margin-top:15px}
+.pricing-table.col-3 > li,
+.pricing-table.col-4 > li{width:100%}
+.pricing-table .highlight{margin-top:0!important;padding:10px!important}
+.filter-button{margin-bottom:10px;}
+}
+@media (max-width:320px){.ourteam .image img{width:150px;}
+}
