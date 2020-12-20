@@ -11,9 +11,8 @@ Author : NEMA
     8.  Our Team
     9.  counters
     10. Portfolio
-    11. Testimonials
-    12. Contact
-    13. Footer
+    11. Contact
+    12. Footer
     Media queries - css/style-responsive.css
 */
 /*------------------------------------*\
@@ -931,8 +930,6 @@ a
     margin-bottom: 20px;
 }
 
-
-
 .portfolio_item .overlay {
     z-index:2;
     transition:all .2s ease-in-out;
@@ -996,88 +993,6 @@ a
 .portfolio_item {
     overflow:hidden
 }
-/*------------------------------------*\
-    11. Testimonials
-\*------------------------------------*/
-.client.content .content-desc{
-    margin-bottom: 60px;
-}
-.parallax6 {
-    background-image: url("../images/parallax/parallax5.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.parallax6::before {
-    content: '';
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-.client{
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-.testimonials
-{
-    padding-bottom: 50px;
-}
-.testimonials .item
-{
-    padding-top: 15px;
-}
-.testimonials .carousel-indicators
-{
-    bottom: 0;
-}
-.testimonials blockquote
-{
-    border:        none;
-    text-align:    center;
-    color:         #fff;
-    position:      relative;
-    font-weight:   400;
-    margin-bottom: 15px;
-}
-.testimonials blockquote .fa-quote-left, .testimonials blockquote .fa-quote-right
-{
-    font-size:   22px;
-    position:    absolute;
-    margin-left: 15px;
-    margin-top:  15px;
-    color:       #8F8E8E;
-}
-.testimonials blockquote .fa-quote-left
-{
-    margin-left: -30px;
-    margin-top:  -15px;
-}
-.testimonials .name
-{
-    color:         #fff;
-    font-size:     14px;
-    margin-bottom: 15px;
-}
-.testimonials .name span
-{
-    margin-left: 5px;
-}
-.testimonials .carousel-indicators li
-{
-    background: #fff;
-    border: none;
-}
-.carousel-indicators li, .carousel-indicators li.active
-{
-    width:  12px;
-    height: 12px;
-    margin: 1px 3px;
-}
 
 /*------------------------------------*\
    Single Post
@@ -1127,58 +1042,7 @@ a
     border: 1px solid;
     border-radius: 0;
 }
-/*------------------------------------*\
-   Post content
-\*-----------------------------------*/
-.blog-content .post-title
-{
-    margin-bottom: 10px;
-    text-indent:   0;
-}
-.blog-content .category
-{
-    text-indent: 0;
-}
-.blog-content .category a
-{
-    font-size: 14px;
-}
-.blog-content .category:first-letter
-{
-    font-size:     14px;
-    font-weight:   400;
-    padding-right: 0;
-}
-.blog-content blockquote
-{
-    font-size:   20px;
-    line-height: 28px;
-    font-style:  italic;
-    font-weight: 300;
-    margin:      30px;
-}
-.blog-content blockquote span
-{
-    display:        block;
-    margin-top:     15px;
-    text-transform: uppercase;
-}
-.blog-content, .blog-content p
-{
-    font-size:   16px;
-    line-height: 26px;
-    text-indent: 20px;
-}
-.blog-content p:first-letter
-{
-    font-size:     20px;
-    font-weight:   700;
-    padding-right: 1px;
-}
-.post-footer
-{
-    margin-bottom: 50px;
-}
+
 /*------------------------------------*\
     Comments
 \*------------------------------------*/
@@ -1221,7 +1085,7 @@ a
     }
 }
 /*-----------------------------------------------------------------------------------*/
-/*  12. Contact us
+/*  11. Contact us
 /*-----------------------------------------------------------------------------------*/
 .contactus{
     padding-left: 0;
@@ -1345,7 +1209,7 @@ textarea {
     font-size: 20px;
 }
 /*------------------------------------*\
-    13.  Footer
+    12.  Footer
 \*------------------------------------*/
 .footer
 {
