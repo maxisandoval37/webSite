@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://maxisandoval37.github.io/webSite/images/logo.png" />
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/fullpage/fullpage-4de243a40619a967c0bf13b95e1ac6f8de89d943b7fc8710de33f681fe287604.css" />
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+<title>Feliz Navidad</title>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+  <style>
+    html { font-size: 15px; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body { height:100%; display: flex; flex-direction: column; }
+    .referer-warning {
+      background: rgb(54, 54, 54);
+      box-shadow: 0 2px 5px rgba(0,0,0, 0.5);
+      padding: 0.75em;
+      color: white;
+      text-align: center;
+      font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+      line-height: 1.2;
+      font-size: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+    .referer-warning h1 { font-size: 48px; margin: 0; }
+    .referer-warning h3 { font-size: 24px; margin: 0;  }
+    .referer-warning a { color: #56bcf9; } /* $linkColorOnBlack */
+  </style>
+</head>
+
+<body class="">
+  <div class="referer-warning">
+    <br/><br/><br/><br/>
+    <hr>
+    <h1>¡FELIZ NAVIDAD!</h1>
+    <h3>Te desea Maximiliano Sandoval</h3>
+    <br/>
+  </div>
+
+  <div id="result-iframe-wrap" role="main">
+
+    <iframe
+      id="result"
+      srcdoc="
+<!DOCTYPE html>
+<html lang=&quot;en&quot; >
+
+<head>
+
+<meta charset=&quot;UTF-8&quot;>  
+<link rel=&quot;apple-touch-icon&quot; type=&quot;image/png&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png&quot; />
+<meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;CodePen&quot;>
+
+<link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot; />
+
+<link rel=&quot;mask-icon&quot; type=&quot;&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg&quot; color=&quot;#111&quot; />
+<link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css&quot;>
+  
+<style>
+body {
+	background-color: rgba(211, 47, 47, 0.65);
+	color: #fff;
+	text-align: center;
+}
+
+ul {
+    display: table;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0;
+}
+ ul li {
+    display: inline-block;
+    float: left;
+ }
+
+.santaclaus {
+    display: block;
+	margin: 0 auto;
+    max-width: 500px;
+}
+
+.santaclaus > div {
+	margin: 0 auto;
+	max-width: 400px;
+}
+
+.santaclaus .chapeu {
+    display: block;
+    position: relative;
+    width: 310px;
+    z-index: 99;
+}
+
+.santaclaus .chapeu .cone-1 {
+    border-left: 50px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 70px solid #D32F2F;
+}
+
+.santaclaus .chapeu .cone-2 {
+    background-color:  #D32F2F;
+    border-top: 0px solid transparent;
+    border-right: 340px solid #D32F2F;
+    border-bottom: 100px solid transparent;
+    border-color: transparent;
+    box-shadow: -25px 15px 30px -5px rgba(1,1,1,0.3);
+    position: relative;
+    left: -56px;
+    top: 49px;
+    transform: rotate(-15deg);
+    border-radius: 30% 100% 0 100%;
+}
+
+.santaclaus .chapeu::after,
+.santaclaus .chapeu::before {
+	background-color: #fff;
+	content: &quot; &quot;;
+	display: block;
+}
+
+.santaclaus .chapeu::after {
+	box-shadow: 0px -15px 40px -5px rgba(1,1,1,0.4);
+    height: 80px;
+    margin-left: -15px;
+    position: relative;
+    width: 340px;
+    border-radius: 0.8em;
+}
+
+.santaclaus .chapeu::before {
+	box-shadow: 20px 20px 40px -5px rgba(1,1,1,0.3);
+    height: 80px;
+    left: -120px;
+    position: absolute;
+    top: 80px;
+    width: 80px;
+    z-index: 111;
+    border-radius: 50%;
+}
+
+.santaclaus .face {
+    background-color: #ffccbc;
+    box-shadow: 0px 0px 30px 5px rgba(1,1,1,0.3);
+    content: &quot; &quot;;
+    display: block;
+    height: 130px;
+    position: relative;
+    top: -10px;
+    width: 300px;
+}
+
+.santaclaus > .orelhas {
+    background-color: #eea2ad;
+    box-shadow: 0px 0px 30px 5px rgba(1,1,1,0.3);
+    display: block;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    top: -125px;
+    width: 330px;
+    z-index: -1;
+    border-radius: 1em 1em 2em 2em;
+}
+
+.santaclaus .face > .eyes {
+	display: inline-block;
+	height: 0px;
+	margin: 20px auto 0;
+	max-width: 160px;
+	width: 100%;
+}
+
+.santaclaus .face > .eyes::before,
+.santaclaus .face > .eyes::after {
+	background-color: #111;
+	content: &quot; &quot;;
+	display: inline-block;
+	float: left;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+}
+
+.santaclaus .face > .eyes::after {
+	float: right;
+}
+
+.santaclaus .face > .nariz {
+	background-color: #EEA2AD;
+	height: 50px;
+	margin: 0 auto;
+	position: relative;
+	width: 70px;
+	z-index: 111;
+	border-radius: 50%;
+}
+
+.santaclaus .face > .barba {
+    background-color: #ecf0f1;
+    box-shadow: -10px 10px 10px -5px rgba(1,1,1,0.3);
+    height: 240px;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+    width: 340px;
+    left: -20px;
+    transform: rotate(-20deg);
+    border-radius: 0% 100% 70% 100%;
+
+    -webkit-animation: animaBarba 1.6s ease-in-out infinite alternate;
+    animation: animaBarba 1.6s ease-in-out infinite alternate;
+}
+
+.santaclaus .face > .barba > .boca {
+    height: 50px;
+    left: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    width: 60px;
+    border-radius: 50%;
+
+    -webkit-animation: hoho 1.6s ease-in-out infinite alternate;
+    animation: hoho 1.6s ease-in-out infinite alternate;
+}
+
+.hohoho {
+    height: 0;
+    padding-top: 200px;
+    width: 150px;
+
+    -webkit-animation: txtHohoho 1.6s ease-in-out infinite alternate;
+    animation: txtHohoho 1.6s ease-in-out infinite alternate;
+}
+
+.hohoho h2::before {
+	text-shadow: 0px 10px 20px rgba(1,1,1,0.4);
+	color: #fff;
+	content: &quot;HO&quot;;
+    font-size: 62px;
+    line-height: 1.4em;
+}
+
+/*Texto Hohoho do lado direito*/
+.hohoho:last-of-type h2 {
+    margin: 0 10px 30px;
+    text-align: right;
+}
+
+.hohoho:last-of-type h2:nth-child(2) {margin-right: -50px;}
+.hohoho:last-of-type h2:first-child,
+.hohoho:last-of-type h2:last-child {
+	-webkit-animation: txtHohohoRight 1.6s ease-in-out infinite alternate;
+	animation: txtHohohoRight 1.6s ease-in-out infinite alternate;
+}
+
+/*Texto Hohoho do lado esquerdo*/
+.hohoho:first-of-type h2 {
+    margin: 0 50px 30px 0;
+    text-align: left;
+}
+
+.hohoho:first-of-type h2:nth-child(2) {margin-left: -60px;}
+.hohoho:first-of-type h2:first-child,
+.hohoho:first-of-type h2:last-child {
+	-webkit-animation: txtHohohoLeft 1.6s ease-in-out infinite alternate;
+	animation: txtHohohoLeft 1.6s ease-in-out infinite alternate;
+}
+
+/*Texto Ho do meio em ambos os lados*/
+.hohoho h2:nth-child(2) {
+	-webkit-animation: txtHohohoMiddle 1.6s ease-in-out infinite alternate;
+	animation: txtHohohoMiddle 1.6s ease-in-out infinite alternate;
+}
+
+/**************
+** Animações **
+***************/
+
+/*FadeIn e fadeOut para textos Hohoho*/
+@-webkit-keyframes txtHohoho {
+	from {opacity: .2}
+	to {opacity: 1}
+}
+@keyframes txtHohoho {
+	from {opacity: .2}
+	to {opacity: 1}
+}
+
+/*Texto Ho do meio em ambos os lados*/
+@-webkit-keyframes txtHohohoMiddle {
+	from {-webkit-transform: scale(1.5);}
+	to {-webkit-transform: scale(1);}
+}
+@keyframes txtHohohoMiddle {
+	from {transform: scale(1.5);}
+	to {transform: scale(1);}
+}
+
+/*Hohoho do lado esquerdo*/
+@-webkit-keyframes txtHohohoLeft {
+	to {-webkit-transform: scale(1.5);}
+}
+@keyframes txtHohohoLeft {
+	to {transform: scale(1.5);}
+}
+
+/*Hohoho do lado direito*/
+@-webkit-keyframes txtHohohoRight {
+	to {-webkit-transform: scale(1.5);}
+}
+@keyframes txtHohohoRight {
+	to {transform: scale(1.5);}
+}
+
+/*Movimenta barba*/
+@-webkit-keyframes animaBarba {
+	to {-webkit-transform: rotate(-10deg);}
+}
+@keyframes animaBarba {
+	to {transform: rotate(-10deg);}
+}
+
+/*Hoho no movimento da boca*/
+@-webkit-keyframes hoho {
+	0% {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 20px 0 0 #111;
+			height: 40px;
+    	width: 60px;
+	}
+
+	60%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 60px;
+    	width: 30px;
+	}
+
+	80%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 50px;
+    	width: 40px;
+	}
+
+	100%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 60px;
+    	width: 30px;
+	}
+}
+@keyframes hoho {
+	0% {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 20px 0 0 #111;
+			height: 40px;
+    	width: 60px;
+	}
+
+	60%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 60px;
+    	width: 30px;
+	}
+
+	80%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 50px;
+    	width: 40px;
+	}
+
+	100%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 60px;
+    	width: 30px;
+	}
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage(&quot;resize&quot;, &quot;*&quot;);
+  }
+</script>
+
+
+</head>
+
+<body translate=&quot;no&quot; >
+  <ul>
+	<li class=&quot;hohoho&quot;>
+  	<h2></h2><h2></h2><h2></h2>
+	</li>
+  <li class=&quot;santaclaus&quot;>
+  	<div class=&quot;chapeu&quot;>
+    	<div class=&quot;cone-2&quot;></div>
+      <div class=&quot;cone-1&quot;></div>
+    </div>
+    <div class=&quot;face&quot;>
+    	<div class=&quot;eyes&quot;></div>
+      <div class=&quot;nariz&quot;></div>
+      <div class=&quot;barba&quot;>
+      	<div class=&quot;boca&quot;></div>
+      </div>
+    </div>
+    <div class=&quot;orelhas&quot;></div>
+  </li>
+  <li class=&quot;hohoho&quot;>
+  	<h2></h2><h2></h2><h2></h2>
+  </li>
+</ul>
+
+</body>
+
+</html>
+ 
+"
+      sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation  allow-scripts allow-top-navigation-by-user-activation" allow="accelerometer; camera; encrypted-media; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write" allowTransparency="true"
+      allowpaymentrequest="true" allowfullscreen="true" class="result-iframe">
+      </iframe>
+
+  </div>
+</body>
+</html>
+
+<!-- source: https://codepen.io/isacdias/pen/ZBwYaO -->
