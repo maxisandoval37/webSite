@@ -27,6 +27,13 @@ switch (date.getMonth()+1) {
         }
         break;
 
+    case 9:
+        if (date.getDay()+1 >= 10 && date.getDay()+1 <= 15){
+            iframe.src = "easterEgg/developerDay/developerday.html";
+            document.getElementById('easterEgg').appendChild(iframe);
+        }
+        break;
+
     case 12:
         if (date.getDay()+1 >= 15 && date.getDay()+1 <= 27){
             iframe.src = "easterEgg/christmas/christmas.html";
