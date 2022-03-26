@@ -424,9 +424,6 @@ a
     margin:      0 0 30px;
     font-weight: 400;
 }
-.text-color{
-    font-weight: bold;
-}
 .banner-content h1
 {
     font-size:   64px;
@@ -780,8 +777,8 @@ a
 }
 .ourteam .image img
 {
-    border-radius: 300px;
-    width:         200px;
+    border-radius: 100%;
+    width:         100%;
     border: 1px solid #000;
 }
 .ourteam .info
