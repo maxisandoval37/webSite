@@ -307,7 +307,7 @@ a
 \*------------------------------------*/
 .content
 {
-    padding: 58px 15px 58px;
+    padding: 30px 15px 58px;
 }
 .content .content-heading
 {
@@ -525,7 +525,7 @@ a
     padding: 0;
 }
 .about .about-bg .aboutus{
-    padding: 50px;
+    padding: 15px;
     background: #fff;
 }
 .about .about-bg .aboutus h3{
@@ -846,7 +846,7 @@ a
 .portfolio-filter{
     float: left;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     text-align: center;
 }
 .filter-button
@@ -1038,7 +1038,7 @@ a
     }
     .content
     {
-        padding: 70px 0 75px;
+        padding: 20px 0 1px;
     }
 }
 /*-----------------------------------------------------------------------------------*/
@@ -1181,7 +1181,7 @@ textarea {
 }
 .footer .social-list
 {
-    margin:    30px 0 0;
+    margin:    5px 0 0;
     font-size: 20px;
 }
 .footer .social-list i{
