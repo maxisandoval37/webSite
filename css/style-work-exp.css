@@ -171,9 +171,7 @@
 
 .sectionClassProject {
   position: relative;
-  display: block;
-  /* background: #f7f7f7; */
-  
+  display: block;  
   margin: 0 auto;
   padding: 80px 1.875em 3.125em;
 }
@@ -267,7 +265,6 @@
   }
   .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
     border-right-color: transparent;
-    /*border-bottom-color: rgb(43, 58, 72);*/
     left: 65px;
   }
   .cbp_tmtimeline > li:nth-child(even) .cbp_tmlabel:after {
