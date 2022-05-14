@@ -75,5 +75,14 @@ a:focus,
     text-decoration: none;
 }
 
-/*style exp*/
-.cbp_tmtimeline > li .cbp_tmlabel {background: #f59c1a;}
+/*style work exp.*/
+.cbp_tmtimeline > li .cbp_tmlabel {
+    border-color:#f59c1a;
+    border-style:solid;
+    box-shadow: 0 0 0 2px #f59c1a;
+    box-shadow: 0 1px 7px #f59c1a;
+    border: 1px solid #f59c1a;
+}
+.cbp_tmtimeline:before {background: #f59c1a;}
+.cbp_tmtimeline > li .cbp_tmicon {background: #f59c1a;}
+.cbp_tmtimeline > li .cbp_tmlabel:after {border-right-color: #f59c1a;border-bottom-color: #f59c1a;}

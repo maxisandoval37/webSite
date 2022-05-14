@@ -75,5 +75,14 @@ a:focus,
     text-decoration: none;
 }
 
-/*style exp*/
-.cbp_tmtimeline > li .cbp_tmlabel {background: #5bb12f;}
+/*style work exp.*/
+.cbp_tmtimeline > li .cbp_tmlabel {
+    border-color:#5bb12f;
+    border-style:solid;
+    box-shadow: 0 0 0 2px #5bb12f;
+    box-shadow: 0 1px 7px #5bb12f;
+    border: 1px solid #5bb12f;
+}
+.cbp_tmtimeline:before {background: #5bb12f;}
+.cbp_tmtimeline > li .cbp_tmicon {background: #5bb12f;}
+.cbp_tmtimeline > li .cbp_tmlabel:after {border-right-color: #5bb12f;border-bottom-color: #5bb12f;}
