@@ -46,7 +46,7 @@
 }
 
 .cbp_tmtimeline {
-  margin: 35px 5px 0 5px;
+  margin: 35px 7px 0 7px;
   padding: 0;
   list-style: none;
   position: relative;
@@ -57,9 +57,9 @@
   position: absolute;
   top: 1%;
   bottom: 0;
-  width: 10px;
-  left: 14.5%;
-  height: 100%;
+  width: 8px;
+  left: 15.7%;
+  height: 99.2%;
 }
 
 .cbp_tmtimeline li:last-child:before {
@@ -104,11 +104,6 @@
   min-height: 150px;
 }
 
-/*
-.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
-  background: #2B3A48;
-}
-*/
 .cbp_tmtimeline > li .cbp_tmlabel h3 {
   margin-top: 0px;
   font-size: 20px;
@@ -140,25 +135,19 @@
 .cbp_tmtimeline > li .cbp_tmlabel:after {
   right: 100%;
   border: solid transparent;
-  content: " ";
+  content: "";
   height: 0;
   width: 0;
   position: absolute;
   pointer-events: none;
   border-width: 10px;
-  top: 70px;
+  top: 20px;
 }
-
-/*
-.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-  border-right-color: #2B3A48;
-}
-*/
 
 .cbp_tmtimeline > li .cbp_tmicon {
-  width: 110px;
-  height: 110px;
-  top: 3%;
+  width: 70px;
+  height: 70px;
+  top: 1%;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -171,12 +160,12 @@
   color: #151515;
   border-radius: 35%;
   text-align: center;
-  left: 12%;
+  left: 15%;
   margin: 0 0 0 -25px;
 }
 
 .cbp_tmtimeline li {
-  margin-bottom: 70px;
+  margin-bottom: 55px;
   position: relative;
 }
 
@@ -221,7 +210,7 @@
   font-size: 40px;
   vertical-align: middle;
   color: white;
-  line-height: 120px;
+  line-height: 75px;
 }
 
 .label {
