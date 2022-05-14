@@ -74,3 +74,6 @@ a:focus,
 .sidebar-block .list-group-item a{
     text-decoration: none;
 }
+
+/*style exp*/
+.cbp_tmtimeline > li .cbp_tmlabel {background: #5bb12f;}
