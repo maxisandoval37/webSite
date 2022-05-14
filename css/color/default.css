@@ -40,3 +40,15 @@ a:focus,
 .pricing-tables .bs:hover{box-shadow:0 1px 7px #f31b4b;border:1px solid #f31b4b;}
 .blog_posts .thumbnail:hover,
 .blog_posts .thumbnail:focus{border:1px solid #f31b4b;box-shadow:0 1px 7px #f31b4b;}
+
+/*style exp*/
+.cbp_tmtimeline > li .cbp_tmlabel {
+    border-color:#f31b4b;
+    border-style:solid;
+    box-shadow: 0 0 0 2px #f31b4b;
+    box-shadow: 0 1px 7px #f31b4b;
+    border: 1px solid #f31b4b;
+}
+.cbp_tmtimeline:before {background: #f31b4b;}
+.cbp_tmtimeline > li .cbp_tmicon {background: #f31b4b;}
+.cbp_tmtimeline > li .cbp_tmlabel:after {border-right-color: #f31b4b;border-bottom-color: #f31b4b;}
