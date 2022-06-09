@@ -11,6 +11,14 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <meta name="keywords" content="presentacion,portafolio,developer,programador,android,java,kotlin,mobile,desk,web,spring,hibernate">
     <meta name="robots" content="ALL">
+    <!-- PATCH: REDIRECT TO HTTPS-->
+    <script>
+        var urlHTTP = "http://maxisandoval.dev.ar";
+        var urlCurrent = location.href;
+        if (urlCurrent.includes(urlHTTP)){
+            location.href = urlCurrent.replace("http","https");
+        }
+    </script>
     <!-- START NO CACHE CONFIG-->
     <meta http-equiv="Expires" content="0">
     <meta http-equiv="Last-Modified" content="0">
