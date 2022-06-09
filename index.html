@@ -19,21 +19,16 @@
             location.href = urlCurrent.replace("http","https");
         }
     </script>
-    <!-- START NO CACHE CONFIG-->
-    <meta http-equiv="Expires" content="0">
-    <meta http-equiv="Last-Modified" content="0">
-    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-    <meta http-equiv="Pragma" content="no-cache">
     <!-- START CSS STYLE  -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quattrocento"/>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css?14.5.22.v3" rel="stylesheet">
-    <link href="css/style-tool-tip-text.css" rel="stylesheet">
-    <link href="css/style-work-exp.css?14.5.22.v3" rel="stylesheet">
-    <link href="css/color/default.css?14.5.22.v3" id="theme" rel="stylesheet">
-    <link href="css/style-responsive.css" rel="stylesheet">
+    <link href="css/style.css?09.06.22" rel="stylesheet">
+    <link href="css/style-tool-tip-text.css?09.06.22" rel="stylesheet">
+    <link href="css/style-work-exp.css?09.06.22" rel="stylesheet">
+    <link href="css/color/default.css?09.06.22" id="theme" rel="stylesheet">
+    <link href="css/style-responsive.css?09.06.22" rel="stylesheet">
 </head>
 
 <!--
@@ -58,7 +53,7 @@
                         <i class="fa fa-bars"></i>
                         <i class="fa fa-close"></i>
                     </button>
-                    <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="logo"></a>
+                    <a href="index.html" class="navbar-brand"><i class="fa fa-home"></i></a>
                 </div>
                 <!-- end navbar-header -->
                 <!-- start navbar-collapse -->
@@ -89,7 +84,9 @@
             </div>
             <!-- end container -->
             <a href="#aboutus" data-click="scroll-to-target">
-                <div class="button-scroll" data-scroll-nav="1"><span><i class="fa fa-angle-down"></i></span></div>
+                <div class="button-scroll" data-scroll-nav="1">
+                    <span><i class="fa fa-angle-down"></i></span>
+                </div>
             </a>
         </div>
         <!-- end home -->
@@ -119,7 +116,7 @@
                             <!-- start team -->
                             <div class="ourteam">
                                 <div class="image" data-animation="true" data-animation-type="rotateIn"> 
-                                    <img class="img-responsive" src="images/team/user1.png"/>
+                                    <img class="img-responsive" src="images/team/user1.png"/ alt="profile-avatar">
                                 </div>
                                 <div class="info">
                                     <h3 class="name">Sandoval Maximiliano</h3>
@@ -437,7 +434,7 @@
                     <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter proyectos">
 
                         <a href="https://github.com/maxisandoval37/appClima" target="_blank">
-                            <img class="img-responsive" src="images/projects/appClima.png" />
+                            <img class="img-responsive" src="images/projects/appClima.png" alt="app-clima"/>
                         </a>
 
                         <div class="overlay-background">
@@ -455,7 +452,7 @@
                     <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter proyectos">
 
                         <a href="https://github.com/maxisandoval37/JuegoAritmetico" target="_blank">
-                            <img class="img-responsive" src="images/projects/juegoA.png" />
+                            <img class="img-responsive" src="images/projects/juegoA.png" alt="juego-java"/>
                         </a>
 
                         <div class="overlay-background">
@@ -473,7 +470,7 @@
                     <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter proyectos">
 
                         <a href="https://github.com/maxisandoval37/dbGestion_Tarjetas" target="_blank">
-                            <img class="img-responsive" src="images/projects/gestorTarjetas.png" />
+                            <img class="img-responsive" src="images/projects/gestorTarjetas.png" alt="gestor-tarjetas"/>
                         </a>
 
                         <div class="overlay-background">
@@ -664,10 +661,10 @@
                         <hr/>
 
                         <div class="form-container">
-                            <form name="contact-form" id="contact-form" action="javascript:void(0);" method="post">
+                            <form name="contact-form" id="contact-form">
                                 <div class="row"></div>
                                     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdf5iGk2hUZtNYdUmOEUA3JzZq0Xkb_bbwZ9W-eOOPxDU2WMg/viewform?embedded=true" 
-                                    width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                                    width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0"></iframe>
                                 </div>
                             </form>
                         </div>
@@ -692,7 +689,7 @@
                     <!--Un agradecimiento especial a jakubtursky.sk :)-->
                 </p>
                 <!-- visitor counter -->
-                <img src="https://websmultimedia.com/contador-de-visitas.php?id=494" hidden></a>
+                <img src="https://websmultimedia.com/contador-de-visitas.php?id=494" hidden>
             </div>
         </div>
         <!-- end footer -->
