@@ -1164,6 +1164,11 @@ textarea {
     padding-top: 20px;
     font-size: 20px;
 }
+.frame-google-form-contact{
+    width: 100%;
+    height: 700px;
+    border: none;
+}
 /*------------------------------------*\
     12.  Footer
 \*------------------------------------*/
