@@ -10,6 +10,20 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <meta name="keywords" content="presentacion,portafolio,developer,programador,android,java,kotlin,mobile,desk,web,spring,hibernate">
     <meta name="robots" content="ALL">
+	<!-- START PATCH: antiClickjack-->
+    <style id="antiClickjack">
+		body{display:none !important;}
+	</style>
+	
+	<script type="text/javascript">
+		if (self === top) {
+			var antiClickjack = document.getElementById("antiClickjack");
+			antiClickjack.parentNode.removeChild(antiClickjack);
+		} else {
+			top.location = self.location;
+		}
+	</script>
+    <!-- END PATCH: antiClickjack-->
     <!-- PATCH: REDIRECT TO HTTPS-->
     <script>
         var urlHTTP = "http://maxisandoval.dev.ar";
