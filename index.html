@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Maximiliano Sandoval | Mx Digital Academy</title>
+    <script type="text/javascript" src="js/utils.js">
+        redirectToHTTPS();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="WebSite de presentación">
     <meta name="author" content="Sandoval Maximiliano">
@@ -10,30 +13,6 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <meta name="keywords" content="presentacion,portafolio,developer,programador,android,java,kotlin,mobile,desk,web,spring,hibernate">
     <meta name="robots" content="ALL">
-	<!-- START PATCH: antiClickjack-->
-    <meta name="referrer" content="none"/>
-    <meta http-equiv="X-Frame-Options" content="deny">
-    <style id="antiClickjack">
-		body{display:none !important;}
-	</style>
-	
-	<script type="text/javascript">
-		if (self === top) {
-			var antiClickjack = document.getElementById("antiClickjack");
-			antiClickjack.parentNode.removeChild(antiClickjack);
-		} else {
-			top.location = self.location;
-		}
-	</script>
-    <!-- END PATCH: antiClickjack-->
-    <!-- PATCH: REDIRECT TO HTTPS-->
-    <script>
-        var urlHTTP = "http://maxisandoval.dev.ar";
-        var urlCurrent = location.href;
-        if (urlCurrent.includes(urlHTTP)) {
-            location.href = urlCurrent.replace("http", "https");
-        }
-    </script>
     <!-- START CSS STYLE  -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quattrocento" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
