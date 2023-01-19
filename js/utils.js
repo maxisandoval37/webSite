@@ -9,3 +9,8 @@ function redirectToHTTPS(){
 function isLocalHost(str){
     return ((/\d/.test(str)) || (str.includes("local")))
 }
+
+function appendCurrentYear(){
+    let currentYear = new Date().getFullYear();
+    document.getElementById('p-footer-desc').append(currentYear);
+}
