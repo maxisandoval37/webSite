@@ -1328,57 +1328,79 @@ textarea {
     max-width: 100%;
     height: auto;
   }
-.theme-mode-toggle {
-    margin-top: 12px;
-    padding: 0 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
+
+.nav-dark-mode {
+    padding: 18px 10px 0;
 }
-.theme-mode-label {
-    font-size: 13px;
-    color: #3a3a3a;
-}
-.theme-switch {
+.mode-switch {
     position: relative;
-    display: inline-block;
-    width: 46px;
-    height: 24px;
+    display: inline-flex;
+    width: 88px;
+    height: 42px;
     margin: 0;
-}
-.theme-switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-.theme-switch-slider {
-    position: absolute;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #d7d7d7;
-    transition: .2s;
-    border-radius: 34px;
 }
-.theme-switch-slider:before {
+.mode-switch input {
     position: absolute;
-    content: "";
-    height: 18px;
-    width: 18px;
-    left: 3px;
-    bottom: 3px;
-    background-color: #fff;
-    transition: .2s;
+    opacity: 0;
+    pointer-events: none;
+}
+.mode-switch-track {
+    width: 100%;
+    height: 100%;
+    background: #ff5a00;
+    border-radius: 999px;
+    transition: background .25s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .25);
+}
+.mode-switch-thumb {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
+    background: #f2f2f2;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
+    transition: transform .25s ease;
 }
-.theme-switch input:checked + .theme-switch-slider {
-    background-color: #444;
+.mode-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
 }
-.theme-switch input:checked + .theme-switch-slider:before {
-    transform: translateX(22px);
+.mode-icon-sun {
+    left: 14px;
+}
+.mode-icon-moon {
+    right: 13px;
+    opacity: .45;
+}
+.mode-switch input:checked + .mode-switch-track {
+    background: #101325;
+}
+.mode-switch input:checked + .mode-switch-track .mode-icon-sun {
+    opacity: .45;
+}
+.mode-switch input:checked + .mode-switch-track .mode-icon-moon {
+    opacity: 1;
+}
+.mode-switch input:checked ~ .mode-switch-thumb {
+    transform: translateX(-46px);
+}
+
+
+.header.navbar.navbar-small .nav-dark-mode {
+    padding-top: 12px;
+}
+
+@media (max-width: 767px) {
+    .nav-dark-mode {
+        padding: 10px 15px 15px;
+    }
 }
 
 body.dark-mode {

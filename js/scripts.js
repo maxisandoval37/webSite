@@ -95,8 +95,7 @@
         var switchSelector = "#dark-mode-switch";
         var storageKey = "mx-dark-mode";
         var savedPreference = localStorage.getItem(storageKey);
-        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-        var isDarkModeEnabled = savedPreference ? savedPreference === "enabled" : prefersDark;
+        var isDarkModeEnabled = savedPreference ? savedPreference === "enabled" : false;
 
         body.toggleClass("dark-mode", isDarkModeEnabled);
         $(switchSelector).prop("checked", isDarkModeEnabled);
