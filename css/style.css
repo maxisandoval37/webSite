@@ -1328,3 +1328,112 @@ textarea {
     max-width: 100%;
     height: auto;
   }
+.theme-mode-toggle {
+    margin-top: 12px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.theme-mode-label {
+    font-size: 13px;
+    color: #3a3a3a;
+}
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 24px;
+    margin: 0;
+}
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.theme-switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d7d7d7;
+    transition: .2s;
+    border-radius: 34px;
+}
+.theme-switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    transition: .2s;
+    border-radius: 50%;
+}
+.theme-switch input:checked + .theme-switch-slider {
+    background-color: #444;
+}
+.theme-switch input:checked + .theme-switch-slider:before {
+    transform: translateX(22px);
+}
+
+body.dark-mode {
+    background: #111318;
+    color: #e0e6ed;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode .content-heading,
+body.dark-mode .aboutus ul li,
+body.dark-mode #p-footer-desc,
+body.dark-mode .contact-info p,
+body.dark-mode .contact-info a {
+    color: #e0e6ed;
+}
+body.dark-mode .about,
+body.dark-mode .services,
+body.dark-mode .portfolio,
+body.dark-mode .work-experience,
+body.dark-mode .contactus,
+body.dark-mode .footer,
+body.dark-mode .ourteam .info,
+body.dark-mode .about .about-bg .aboutus {
+    background: #171b22;
+}
+body.dark-mode .header.navbar.navbar-small {
+    background: #171b22;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+body.dark-mode .header.navbar.navbar-small .navbar-brand,
+body.dark-mode .header.navbar.navbar-small .navbar-nav > li > a,
+body.dark-mode .header.navbar.navbar-small .navbar-toggle i {
+    color: #f4f6f8;
+}
+body.dark-mode .divider .outer-line,
+body.dark-mode hr {
+    border-color: rgba(255, 255, 255, .2);
+}
+body.dark-mode .theme-settings .theme-settings-content,
+body.dark-mode .theme-settings .theme-collapse-btn {
+    background: #1e232b;
+    color: #f4f6f8;
+}
+body.dark-mode .theme-mode-label {
+    color: #f4f6f8;
+}
+body.dark-mode .white_overlay_right,
+body.dark-mode .white_overlay_left {
+    background-color: rgba(17, 19, 24, 0.8);
+}
+body.dark-mode .custom-tooltiptext {
+    background-color: #0d1117;
+    color: #f4f6f8;
+}
