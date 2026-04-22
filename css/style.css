@@ -1430,6 +1430,10 @@ body.dark-mode .ourteam .info,
 body.dark-mode .about .about-bg .aboutus {
     background: #171b22;
 }
+body.dark-mode .footer {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
 body.dark-mode .header.navbar.navbar-small {
     background: #171b22;
     box-shadow: none;
