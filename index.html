@@ -14,7 +14,7 @@
     <meta name="robots" content="ALL">
     <!-- START CSS STYLE  -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quattrocento">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css?03.05.24" rel="stylesheet">
@@ -32,7 +32,7 @@
 
 -->
 
-<body data-spy="scroll" data-target="#header-navbar" data-offset="51">
+<body data-bs-spy="scroll" data-bs-target="#header-navbar" data-bs-offset="51">
 
     <script>
         console.log(` #     #    #    #     # ###  #####     #    #     # ######  ####### #     #    #    #        #####  ####### 
@@ -47,12 +47,12 @@
     <!-- start main-container -->
     <div id="main-container" class="fade">
         <!-- start header -->
-        <div id="header" class="header navbar navbar-fixed-top">
+        <div id="header" class="header navbar navbar-expand-lg fixed-top">
             <!-- start container -->
             <div class="container">
                 <!-- start navbar-header -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar">
+                    <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#header-navbar" aria-controls="header-navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa fa-bars"></i>
                         <i class="fa fa-close"></i>
                     </button>
@@ -61,9 +61,9 @@
                 <!-- end navbar-header -->
                 <!-- start navbar-collapse -->
                 <div class="collapse navbar-collapse" id="header-navbar">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="navbar-nav ms-auto">
                         <li class="active"><a href="#home" data-click="scroll-to-target">INICIO</a></li>
-                        <li><a data-toggle="collapse" href="#aboutus" data-click="scroll-to-target">¿QUIÉN SOY?</a></li>
+                        <li><a href="#aboutus" data-click="scroll-to-target">¿QUIÉN SOY?</a></li>
                         <li><a href="#services" data-click="scroll-to-target">REDES SOCIALES</a></li>
                         <li><a href="#portfolio" data-click="scroll-to-target">TRABAJOS</a></li>
                         <li><a href="#work-experience" data-click="scroll-to-target">EXPERIENCIA</a></li>
@@ -119,7 +119,7 @@
                             <div class="ourteam">
                                 <div class="image custom-tooltip" data-animation="true" data-animation-type="rotateIn">
                                     <span class="custom-tooltiptext"><b>¡Hola! :D</b></span>
-                                    <img class="img-responsive" src="images/team/user1.png?v3" alt="profile-avatar">
+                                    <img class="img-fluid" src="images/team/user1.png?v3" alt="profile-avatar">
                                 </div>
                                 <div class="info">
                                     <h3 class="name">Sandoval Maximiliano</h3>
@@ -162,7 +162,7 @@
                     <!-- start row -->
                     <div class="row no-padding">
                         <!-- strart col-6 -->
-                        <div class="col-md-6 col-sm-6 col-md-offset-6 col-sm-offset-6 no-padding" data-animation="true"
+                        <div class="col-md-6 col-sm-6 offset-md-6 offset-sm-6 no-padding" data-animation="true"
                             data-animation-type="fadeInLeft">
                             <!-- start about -->
                             <div class="aboutus">
@@ -464,7 +464,7 @@
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter proyectos">
                             <a href="https://github.com/maxisandoval37/webapp-maxcotas" target="_blank">
-                                <img class="img-responsive" src="images/projects/maxcotas.png" alt="MAXcotas">
+                                <img class="img-fluid" src="images/projects/maxcotas.png" alt="MAXcotas">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -480,7 +480,7 @@
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter proyectos">
                             <a href="https://github.com/maxisandoval37/react-country-app" target="_blank">
-                                <img class="img-responsive" src="images/projects/countryApp.png" alt="juego-java">
+                                <img class="img-fluid" src="images/projects/countryApp.png" alt="juego-java">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -496,7 +496,7 @@
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter proyectos">
                             <a href="https://github.com/maxisandoval37/gestor-presupuestos" target="_blank">
-                                <img class="img-responsive" src="images/projects/gestorPrespuestos.png" alt="gestor-presupuestos">
+                                <img class="img-fluid" src="images/projects/gestorPrespuestos.png" alt="gestor-presupuestos">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -512,7 +512,7 @@
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter proyectos">
                             <a href="https://github.com/maxisandoval37/appGenda" target="_blank">
-                                <img class="img-responsive" src="images/projects/appGenda.png" alt="app-genda">
+                                <img class="img-fluid" src="images/projects/appGenda.png" alt="app-genda">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -528,7 +528,7 @@
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter videosVarios">
                             <a href="https://www.youtube.com/watch?v=-AV4LfKtlTk" target="_blank">
-                                <img class="img-responsive" src="images/projects/videoSpot.jpg" alt="Video: Spot Publicitario">
+                                <img class="img-fluid" src="images/projects/videoSpot.jpg" alt="Video: Spot Publicitario">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -544,7 +544,7 @@
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter videosVarios">
                             <a href="https://www.youtube.com/watch?v=LzdzWEMED-Y" target="_blank">
-                                <img class="img-responsive" src="images/projects/videoRetrofit.jpg" alt="Video: Fix bug retrofit">
+                                <img class="img-fluid" src="images/projects/videoRetrofit.jpg" alt="Video: Fix bug retrofit">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -560,7 +560,7 @@
                                                 <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter certificados">
                             <a href="https://www.educacionit.com/perfil/maximiliano-sandoval-822124/certificado/64899" target="_blank">
-                                <img class="img-responsive center-img" src="images/certificates/certificateReactJS.png" alt="Certificado: React JS">
+                                <img class="img-fluid center-img" src="images/certificates/certificateReactJS.png" alt="Certificado: React JS">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -576,7 +576,7 @@
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter certificados">
                             <a href="https://www.educacionit.com/perfil/maximiliano-sandoval-822124/certificado/68706" target="_blank">
-                                <img class="img-responsive center-img" src="images/certificates/certificateSpringBoot.png" alt="Certificado: Spring Boot">
+                                <img class="img-fluid center-img" src="images/certificates/certificateSpringBoot.png" alt="Certificado: Spring Boot">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -592,7 +592,7 @@
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter certificados">
                             <a href="https://www.udemy.com/certificate/UC-b95e04b8-e9b7-4259-b40c-5fbfd032fb19/" target="_blank">
-                                <img class="img-responsive center-img" src="images/certificates/certficateJava.jpg" alt="Certificado: Java">
+                                <img class="img-fluid center-img" src="images/certificates/certficateJava.jpg" alt="Certificado: Java">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -722,7 +722,7 @@
                 <!-- start container -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-8 offset-md-2">
                             <ul class="contact-info list-inline text-center">
                                 <li>
                                     <i class="fa fa-map-marker"></i>
@@ -794,7 +794,7 @@
     <!-- end main-container -->
     <!-- start JS  -->
     <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/scroll.js"></script>
     <script src="js/scripts.js"></script>
     <!--  end JS  -->

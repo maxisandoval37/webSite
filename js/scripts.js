@@ -54,14 +54,14 @@ $(window).on("scroll load", function () {
 
 });
 $(document).on('click', '.nav a', function () {
-    $('.navbar-collapse').removeClass('in');
-    $('.navbar-toggle .fa-bars').css('display', 'block');
-    $('.navbar-toggle .fa-close').css('display', 'none');
-    $('.navbar-toggle').addClass('collapsed');
+    $('.navbar-collapse').removeClass('show');
+    $('.navbar-toggler .fa-bars').css('display', 'block');
+    $('.navbar-toggler .fa-close').css('display', 'none');
+    $('.navbar-toggler').addClass('collapsed').attr('aria-expanded', 'false');
 });
-$(document).on('click', '.navbar-toggle.collapsed', function () {
-    $('.navbar-toggle .fa-bars').css('display', 'none');
-    $('.navbar-toggle .fa-close').css('display', 'block');
+$(document).on('click', '.navbar-toggler.collapsed', function () {
+    $('.navbar-toggler .fa-bars').css('display', 'none');
+    $('.navbar-toggler .fa-close').css('display', 'block');
 });
 $(document).on('click', '.filter-button', function () {
     var value = $(this).attr('data-filter');
