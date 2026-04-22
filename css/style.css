@@ -1457,9 +1457,13 @@ body.dark-mode .theme-settings .theme-collapse-btn {
 body.dark-mode .theme-mode-label {
     color: #f4f6f8;
 }
-body.dark-mode .white_overlay_right,
-body.dark-mode .white_overlay_left {
+body.dark-mode .white_overlay_right {
     background-color: #171b22;
+    opacity: 1;
+}
+body.dark-mode .white_overlay_left {
+    background-color: #171b22 !important;
+    opacity: 1;
 }
 body.dark-mode .custom-tooltiptext {
     background-color: #0d1117;
