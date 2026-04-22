@@ -1376,6 +1376,7 @@ textarea {
 }
 .mode-icon-sun {
     left: 11px;
+    opacity: 0;
 }
 .mode-icon-moon {
     right: 10px;
