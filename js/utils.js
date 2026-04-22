@@ -1,16 +1,22 @@
-function redirectToHTTPS(){
-    var urlHTTP = "http://";
-    var urlCurrent = location.href;
-    if (urlCurrent.includes(urlHTTP) && !(isLocalHost(urlCurrent))) {
-        location.href = urlCurrent.replace("http", "https");
+function redirectToHTTPS() {
+    var currentUrl = window.location.href;
+    var isHttp = currentUrl.indexOf("http://") === 0;
+
+    if (isHttp && !isLocalHost(currentUrl)) {
+        window.location.href = currentUrl.replace("http://", "https://");
     }
 }
 
-function isLocalHost(str){
-    return ((/\d/.test(str)) || (str.includes("local")));
+function isLocalHost(url) {
+    return /\d/.test(url) || url.indexOf("local") !== -1;
 }
 
-function appendCurrentYear(){
-    let today = new Date();
-    document.getElementById('p-footer-desc').append(today.getFullYear());
+function appendCurrentYear() {
+    var footer = document.getElementById("p-footer-desc");
+
+    if (!footer) {
+        return;
+    }
+
+    footer.append(new Date().getFullYear());
 }

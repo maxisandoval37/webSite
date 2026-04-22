@@ -25,24 +25,25 @@
 </head>
 
 <!--
-  __  __     _    __  __  ___   ___     _     _  _   ___     ___   __   __    _     _      ____  ____ 
+  __  __     _    __  __  ___   ___     _     _  _   ___     ___   __   __    _     _      ____  ____
  |  \/  |   /_\   \ \/ / |_ _| / __|   /_\   | \| | |   \   / _ \  \ \ / /   /_\   | |    |__ / |__  |
- | |\/| |  / _ \   >  <   | |  \__ \  / _ \  | .` | | |) | | (_) |  \ V /   / _ \  | |__   |_ \   / / 
- |_|  |_| /_/ \_\ /_/\_\ |___| |___/ /_/ \_\ |_|\_| |___/   \___/    \_/   /_/ \_\ |____| |___/  /_/  
+ | |\/| |  / _ \   >  <   | |  \__ \  / _ \  | .` | | |) | | (_) |  \ V /   / _ \  | |__   |_ \   / /
+ |_|  |_| /_/ \_\ /_/\_\ |___| |___/ /_/ \_\ |_|\_| |___/   \___/    \_/   /_/ \_\ |____| |___/  /_/
 
 -->
 
-<body data-spy="scroll" data-target="#header-navbar" data-offset="51">
+<body data-bs-spy="scroll" data-bs-target="#header-navbar" data-bs-offset="51">
 
     <script>
-        console.log(` #     #    #    #     # ###  #####     #    #     # ######  ####### #     #    #    #        #####  ####### 
- ##   ##   # #    #   #   #  #     #   # #   ##    # #     # #     # #     #   # #   #       #     # #    #  
- # # # #  #   #    # #    #  #        #   #  # #   # #     # #     # #     #  #   #  #             #     #   
- #  #  # #     #    #     #   #####  #     # #  #  # #     # #     # #     # #     # #        #####     #    
- #     # #######   # #    #        # ####### #   # # #     # #     #  #   #  ####### #             #   #     
- #     # #     #  #   #   #  #     # #     # #    ## #     # #     #   # #   #     # #       #     #   #     
+        console.log(` #     #    #    #     # ###  #####     #    #     # ######  ####### #     #    #    #        #####  #######
+ ##   ##   # #    #   #   #  #     #   # #   ##    # #     # #     # #     #   # #   #       #     # #    #
+ # # # #  #   #    # #    #  #        #   #  # #   # #     # #     # #     #  #   #  #             #     #
+ #  #  # #     #    #     #   #####  #     # #  #  # #     # #     # #     # #     # #        #####     #
+ #     # #######   # #    #        # ####### #   # # #     # #     #  #   #  ####### #             #   #
+ #     # #     #  #   #   #  #     # #     # #    ## #     # #     #   # #   #     # #       #     #   #
  #     # #     # #     # ###  #####  #     # #     # ######  #######    #    #     # #######  #####    #     `);
     </script>
+
 
     <!-- start main-container -->
     <div id="main-container" class="fade">
@@ -52,7 +53,7 @@
             <div class="container">
                 <!-- start navbar-header -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar">
+                    <button type="button" class="navbar-toggle navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#header-navbar" aria-controls="header-navbar" aria-expanded="false" aria-label="Alternar navegación">
                         <i class="fa fa-bars"></i>
                         <i class="fa fa-close"></i>
                     </button>
@@ -61,9 +62,9 @@
                 <!-- end navbar-header -->
                 <!-- start navbar-collapse -->
                 <div class="collapse navbar-collapse" id="header-navbar">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav ms-auto">
                         <li class="active"><a href="#home" data-click="scroll-to-target">INICIO</a></li>
-                        <li><a data-toggle="collapse" href="#aboutus" data-click="scroll-to-target">¿QUIÉN SOY?</a></li>
+                        <li><a href="#aboutus" data-click="scroll-to-target">¿QUIÉN SOY?</a></li>
                         <li><a href="#services" data-click="scroll-to-target">REDES SOCIALES</a></li>
                         <li><a href="#portfolio" data-click="scroll-to-target">TRABAJOS</a></li>
                         <li><a href="#work-experience" data-click="scroll-to-target">EXPERIENCIA</a></li>
@@ -119,32 +120,32 @@
                             <div class="ourteam">
                                 <div class="image custom-tooltip" data-animation="true" data-animation-type="rotateIn">
                                     <span class="custom-tooltiptext"><b>¡Hola! :D</b></span>
-                                    <img class="img-responsive" src="images/team/user1.png?v3" alt="profile-avatar">
+                                    <img class="img-responsive img-fluid" src="images/team/user1.png?v3" alt="profile-avatar">
                                 </div>
                                 <div class="info">
                                     <h3 class="name">Sandoval Maximiliano</h3>
                                     <div class="title text-theme">Software Developer</div>
-                                    <br>
-                                        Java Web Developer (Aeropuertos Argentina) </br>
-                                        Técnico Universitario en Informática </br>
+                                    <p class="profile-summary">
+                                        Java Web Developer (Aeropuertos Argentina)<br>
+                                        Técnico Universitario en Informática<br>
                                         Profe en Educación IT
                                     </p>
                                     <div class="social">
 
-                                        <a class="github" href="https://github.com/maxisandoval37/" target="_blank">
+                                        <a class="github" href="https://github.com/maxisandoval37/" target="_blank" rel="noopener noreferrer">
                                             <i class="fa fa-github fa-lg fa-fw"></i>
                                         </a>
 
-                                        <a class="linkedin" href="https://www.linkedin.com/in/maximiliano-sandoval/" target="_blank">
+                                        <a class="linkedin" href="https://www.linkedin.com/in/maximiliano-sandoval/" target="_blank" rel="noopener noreferrer">
                                             <i class="fa fa-linkedin fa-lg fa-fw"></i>
                                         </a>
 
-                                        <a class="instagram" href="https://www.instagram.com/maxisandoval37/" target="_blank">
+                                        <a class="instagram" href="https://www.instagram.com/maxisandoval37/" target="_blank" rel="noopener noreferrer">
                                             <i class="fa fa-instagram fa-lg fa-fw"></i>
                                         </a>
 
                                         <a class="youtube"
-                                            href="https://www.youtube.com/watch?v=-AV4LfKtlTk&list=PLfwQfDfaNmvq1o1aQMyzdcimX8QOgPBHx&index=2&t=0s" target="_blank">
+                                            href="https://www.youtube.com/watch?v=-AV4LfKtlTk&list=PLfwQfDfaNmvq1o1aQMyzdcimX8QOgPBHx&index=2&t=0s" target="_blank" rel="noopener noreferrer">
                                             <i class="fa fa-youtube fa-lg fa-fw"></i>
                                         </a>
                                     </div>
@@ -162,7 +163,7 @@
                     <!-- start row -->
                     <div class="row no-padding">
                         <!-- strart col-6 -->
-                        <div class="col-md-6 col-sm-6 col-md-offset-6 col-sm-offset-6 no-padding" data-animation="true"
+                        <div class="col-md-6 col-sm-6 offset-md-6 offset-sm-6 no-padding" data-animation="true"
                             data-animation-type="fadeInLeft">
                             <!-- start about -->
                             <div class="aboutus">
@@ -344,7 +345,7 @@
                             <!-- start service item -->
                             <div class="col-md-4 col-sm-6 space-20">
                                 <div class="service-item-box text-center">
-                                    <a href="https://github.com/maxisandoval37" target="_blank">
+                                    <a href="https://github.com/maxisandoval37" target="_blank" rel="noopener noreferrer">
                                         <i class="icon fa fa-github"></i>
                                     </a>
                                     <h3>/maxisandoval37</h3>
@@ -355,7 +356,7 @@
                             <!-- start service item -->
                             <div class="col-md-4 col-sm-6 space-20">
                                 <div class="service-item-box text-center">
-                                    <a href="https://www.linkedin.com/in/maximiliano-sandoval/" target="_blank">
+                                    <a href="https://www.linkedin.com/in/maximiliano-sandoval/" target="_blank" rel="noopener noreferrer">
                                         <i class="icon fa fa-linkedin"></i>
                                     </a>
                                     <h3>/maximiliano-sandoval</h3>
@@ -366,7 +367,7 @@
                             <!-- start service item -->
                             <div class="col-md-4 col-sm-6 space-20">
                                 <div class="service-item-box text-center">
-                                    <a href="https://www.instagram.com/maxisandoval37/" target="_blank">
+                                    <a href="https://www.instagram.com/maxisandoval37/" target="_blank" rel="noopener noreferrer">
                                         <i class="icon fa fa-instagram"></i>
                                     </a>
                                     <h3>@maxisandoval37</h3>
@@ -377,7 +378,7 @@
                             <!-- start service item -->
                             <div class="col-md-4 col-sm-6 space-20">
                                 <div class="service-item-box text-center">
-                                    <a href="mailto:maxisandoval98@gmail.com" target="_blank">
+                                    <a href="mailto:maxisandoval98@gmail.com" target="_blank" rel="noopener noreferrer">
                                         <i class="icon fa fa-envelope-o"></i>
                                     </a>
                                     <h3>maxisandoval98@gmail.com</h3>
@@ -388,7 +389,7 @@
                             <!-- start service item -->
                             <div class="col-md-4 col-sm-6 space-20">
                                 <div class="service-item-box text-center">
-                                    <a href="https://www.youtube.com/watch?v=-AV4LfKtlTk&list=PLfwQfDfaNmvq1o1aQMyzdcimX8QOgPBHx&index=2&t=0s" target="_blank">
+                                    <a href="https://www.youtube.com/watch?v=-AV4LfKtlTk&list=PLfwQfDfaNmvq1o1aQMyzdcimX8QOgPBHx&index=2&t=0s" target="_blank" rel="noopener noreferrer">
                                         <i class="icon fa fa-youtube"></i>
                                     </a>
                                     <h3>Mx Digital Academy</h3>
@@ -399,7 +400,7 @@
                             <!-- start service item -->
                             <div class="col-md-4 col-sm-6 space-20">
                                 <div class="service-item-box text-center">
-                                    <a href="https://www.instagram.com/mx.digital.academy/" target="_blank">
+                                    <a href="https://www.instagram.com/mx.digital.academy/" target="_blank" rel="noopener noreferrer">
                                         <i class="icon fa fa-instagram"></i>
                                     </a>
                                     <h3>@mx.digital.academy</h3>
@@ -463,8 +464,8 @@
 
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter proyectos">
-                            <a href="https://github.com/maxisandoval37/webapp-maxcotas" target="_blank">
-                                <img class="img-responsive" src="images/projects/maxcotas.png" alt="MAXcotas">
+                            <a href="https://github.com/maxisandoval37/webapp-maxcotas" target="_blank" rel="noopener noreferrer">
+                                <img class="img-responsive img-fluid" src="images/projects/maxcotas.png" alt="MAXcotas">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -479,8 +480,8 @@
 
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter proyectos">
-                            <a href="https://github.com/maxisandoval37/react-country-app" target="_blank">
-                                <img class="img-responsive" src="images/projects/countryApp.png" alt="juego-java">
+                            <a href="https://github.com/maxisandoval37/react-country-app" target="_blank" rel="noopener noreferrer">
+                                <img class="img-responsive img-fluid" src="images/projects/countryApp.png" alt="juego-java">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -495,8 +496,8 @@
 
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter proyectos">
-                            <a href="https://github.com/maxisandoval37/gestor-presupuestos" target="_blank">
-                                <img class="img-responsive" src="images/projects/gestorPrespuestos.png" alt="gestor-presupuestos">
+                            <a href="https://github.com/maxisandoval37/gestor-presupuestos" target="_blank" rel="noopener noreferrer">
+                                <img class="img-responsive img-fluid" src="images/projects/gestorPrespuestos.png" alt="gestor-presupuestos">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -511,8 +512,8 @@
 
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter proyectos">
-                            <a href="https://github.com/maxisandoval37/appGenda" target="_blank">
-                                <img class="img-responsive" src="images/projects/appGenda.png" alt="app-genda">
+                            <a href="https://github.com/maxisandoval37/appGenda" target="_blank" rel="noopener noreferrer">
+                                <img class="img-responsive img-fluid" src="images/projects/appGenda.png" alt="app-genda">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -527,8 +528,8 @@
 
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter videosVarios">
-                            <a href="https://www.youtube.com/watch?v=-AV4LfKtlTk" target="_blank">
-                                <img class="img-responsive" src="images/projects/videoSpot.jpg" alt="Video: Spot Publicitario">
+                            <a href="https://www.youtube.com/watch?v=-AV4LfKtlTk" target="_blank" rel="noopener noreferrer">
+                                <img class="img-responsive img-fluid" src="images/projects/videoSpot.jpg" alt="Video: Spot Publicitario">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -543,8 +544,8 @@
 
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter videosVarios">
-                            <a href="https://www.youtube.com/watch?v=LzdzWEMED-Y" target="_blank">
-                                <img class="img-responsive" src="images/projects/videoRetrofit.jpg" alt="Video: Fix bug retrofit">
+                            <a href="https://www.youtube.com/watch?v=LzdzWEMED-Y" target="_blank" rel="noopener noreferrer">
+                                <img class="img-responsive img-fluid" src="images/projects/videoRetrofit.jpg" alt="Video: Fix bug retrofit">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -559,24 +560,8 @@
 
                                                 <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter certificados">
-                            <a href="https://www.educacionit.com/perfil/maximiliano-sandoval-822124/certificado/64899" target="_blank">
-                                <img class="img-responsive center-img" src="images/certificates/certificateReactJS.png" alt="Certificado: React JS">
-                            </a>
-                            <div class="overlay-background">
-                                <div class="inner"></div>
-                            </div>
-                            <div class="overlay">
-                                <div class="inner-overlay">
-                                    <div class="inner-overlay-content with-icons"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end portfolio item -->
-                        
-                        <!-- start portfolio item -->
-                        <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter certificados">
-                            <a href="https://www.educacionit.com/perfil/maximiliano-sandoval-822124/certificado/68706" target="_blank">
-                                <img class="img-responsive center-img" src="images/certificates/certificateSpringBoot.png" alt="Certificado: Spring Boot">
+                            <a href="https://www.educacionit.com/perfil/maximiliano-sandoval-822124/certificado/64899" target="_blank" rel="noopener noreferrer">
+                                <img class="img-responsive img-fluid center-img" src="images/certificates/certificateReactJS.png" alt="Certificado: React JS">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -591,8 +576,24 @@
 
                         <!-- start portfolio item -->
                         <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter certificados">
-                            <a href="https://www.udemy.com/certificate/UC-b95e04b8-e9b7-4259-b40c-5fbfd032fb19/" target="_blank">
-                                <img class="img-responsive center-img" src="images/certificates/certficateJava.jpg" alt="Certificado: Java">
+                            <a href="https://www.educacionit.com/perfil/maximiliano-sandoval-822124/certificado/68706" target="_blank" rel="noopener noreferrer">
+                                <img class="img-responsive img-fluid center-img" src="images/certificates/certificateSpringBoot.png" alt="Certificado: Spring Boot">
+                            </a>
+                            <div class="overlay-background">
+                                <div class="inner"></div>
+                            </div>
+                            <div class="overlay">
+                                <div class="inner-overlay">
+                                    <div class="inner-overlay-content with-icons"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end portfolio item -->
+
+                        <!-- start portfolio item -->
+                        <div class="portfolio_item col-lg-4 col-md-4 col-sm-6 col-xs-12 filter certificados">
+                            <a href="https://www.udemy.com/certificate/UC-b95e04b8-e9b7-4259-b40c-5fbfd032fb19/" target="_blank" rel="noopener noreferrer">
+                                <img class="img-responsive img-fluid center-img" src="images/certificates/certficateJava.jpg" alt="Certificado: Java">
                             </a>
                             <div class="overlay-background">
                                 <div class="inner"></div>
@@ -640,9 +641,9 @@
                                         <h4><i class="fa fa-chevron-right"></i>Software Developer</h4>
                                         <div class="date"><i class="fa fa-calendar"></i>Oct 21 - Act.</div>
                                         <p class="projectParagraph">Desarrollador backend y frontend Java - Spring Boot.
-                                            Manejo de bases de datos relacionales (Oracle SQL). 
-                                            Desarrollo de web services SOAP y APIs REST, integración con DBs utilizando Spring Data JPA, 
-                                            implementación de seguridad a través de Spring Security, documentación con Swagger 
+                                            Manejo de bases de datos relacionales (Oracle SQL).
+                                            Desarrollo de web services SOAP y APIs REST, integración con DBs utilizando Spring Data JPA,
+                                            implementación de seguridad a través de Spring Security, documentación con Swagger
                                             y gestión de dependencias con herramientas como Maven y Gradle.</p>
                                     </div>
                                 </li>
@@ -655,7 +656,7 @@
                                         <h3>Cheio</h3>
                                         <h4><i class="fa fa-chevron-right"></i>Java web Developer</h4>
                                         <div class="date"><i class="fa fa-calendar"></i>May 21 - Oct 21</div>
-                                        <p class="projectParagraph">Desarrollador backend especializado en Spring Boot, 
+                                        <p class="projectParagraph">Desarrollador backend especializado en Spring Boot,
                                             con experiencia en el diseño e implementación de aplicaciones backend robustas y escalables.
                                         </p>
                                     </div>
@@ -722,7 +723,7 @@
                 <!-- start container -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-8 offset-md-2">
                             <ul class="contact-info list-inline text-center">
                                 <li>
                                     <i class="fa fa-map-marker"></i>
@@ -739,7 +740,7 @@
                             <div class="form-container">
                                 <form name="contact-form" id="contact-form">
                                     <div class="row">
-                                        <iframe title="Form contact" class="frame-google-form-contact" 
+                                        <iframe title="Form contact" class="frame-google-form-contact"
                                             src="https://docs.google.com/forms/d/e/1FAIpQLSdf5iGk2hUZtNYdUmOEUA3JzZq0Xkb_bbwZ9W-eOOPxDU2WMg/viewform?embedded=true">
                                         </iframe>
                                     </div>
@@ -762,7 +763,7 @@
                     <p id="p-footer-desc">
                         Sitio desarrollado por: Sandoval Maximiliano<br>
                         Inspirado por: Nema Template <br><br>
-                        - Todos los derechos reservados © 
+                        - Todos los derechos reservados ©
                         <!--Un agradecimiento especial a jakubtursky.sk :)-->
                         <script>appendCurrentYear()</script>
                         -
@@ -774,7 +775,7 @@
             <!-- end footer -->
             <!-- start theme-settings -->
             <div class="theme-settings">
-                <a href="javascript:;" data-click="theme-settings-expand" class="theme-collapse-btn">
+                <a href="#" data-click="theme-settings-expand" class="theme-collapse-btn" aria-label="Cambiar tema">
                     <i class="fa fa-cog fa-spin"></i>
                 </a>
                 <div class="theme-settings-content">
@@ -788,7 +789,7 @@
                 </div>
             </div>
             <!-- end theme-settings -->
-            <a href="javascript:void(0);" id="scroll-to-top"><i class="fa fa-arrow-up"></i></a>
+            <a href="#" id="scroll-to-top" aria-label="Volver arriba"><i class="fa fa-arrow-up"></i></a>
         </div>
     </div>
     <!-- end main-container -->
