@@ -1459,7 +1459,7 @@ body.dark-mode .theme-mode-label {
 }
 body.dark-mode .white_overlay_right,
 body.dark-mode .white_overlay_left {
-    background-color: rgba(17, 19, 24, 0.8);
+    background-color: #171b22;
 }
 body.dark-mode .custom-tooltiptext {
     background-color: #0d1117;
