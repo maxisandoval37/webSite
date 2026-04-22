@@ -1330,13 +1330,13 @@ textarea {
   }
 
 .nav-dark-mode {
-    padding: 18px 10px 0;
+    padding: 20px 10px 0;
 }
 .mode-switch {
     position: relative;
     display: inline-flex;
-    width: 88px;
-    height: 42px;
+    width: 72px;
+    height: 28px;
     margin: 0;
     cursor: pointer;
 }
@@ -1355,10 +1355,10 @@ textarea {
 }
 .mode-switch-thumb {
     position: absolute;
-    top: 4px;
-    right: 4px;
-    width: 34px;
-    height: 34px;
+    top: 3px;
+    right: 3px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     background: #f2f2f2;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
@@ -1369,14 +1369,14 @@ textarea {
     top: 50%;
     transform: translateY(-50%);
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1;
 }
 .mode-icon-sun {
-    left: 14px;
+    left: 11px;
 }
 .mode-icon-moon {
-    right: 13px;
+    right: 10px;
     opacity: .45;
 }
 .mode-switch input:checked + .mode-switch-track {
@@ -1389,12 +1389,12 @@ textarea {
     opacity: 1;
 }
 .mode-switch input:checked ~ .mode-switch-thumb {
-    transform: translateX(-46px);
+    transform: translateX(-44px);
 }
 
 
 .header.navbar.navbar-small .nav-dark-mode {
-    padding-top: 12px;
+    padding-top: 11px;
 }
 
 @media (max-width: 767px) {
