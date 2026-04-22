@@ -74,16 +74,24 @@
           $(this).closest("li").addClass("active"));
       }));
   }));
+const syncNavbarToggleState = function () {
+  const isMobileMenuOpen = $("#header-navbar").hasClass("in");
+  $(".navbar-toggle").toggleClass("collapsed", !isMobileMenuOpen);
+};
+
 $(document).on("click", ".nav a", function () {
-  $(".navbar-collapse").removeClass("in");
-  $(".navbar-toggle .fa-bars").css("display", "block");
-  $(".navbar-toggle .fa-close").css("display", "none");
-  $(".navbar-toggle").addClass("collapsed");
+  $("#header-navbar").collapse("hide");
 });
-$(document).on("click", ".navbar-toggle.collapsed", function () {
-  $(".navbar-toggle .fa-bars").css("display", "none");
-  $(".navbar-toggle .fa-close").css("display", "block");
+
+$("#header-navbar").on("shown.bs.collapse hidden.bs.collapse", function () {
+  syncNavbarToggleState();
 });
+
+$(window).on("resize", function () {
+  syncNavbarToggleState();
+});
+
+syncNavbarToggleState();
 $(document).on("click", ".filter-button", function () {
   var value = $(this).attr("data-filter");
 
