@@ -89,6 +89,24 @@
         });
     }
 
+
+    function bindDarkModeSwitch() {
+        var body = $("body");
+        var switchSelector = "#dark-mode-switch";
+        var storageKey = "mx-dark-mode";
+        var savedPreference = localStorage.getItem(storageKey);
+        var isDarkModeEnabled = savedPreference ? savedPreference === "enabled" : false;
+
+        body.toggleClass("dark-mode", isDarkModeEnabled);
+        $(switchSelector).prop("checked", isDarkModeEnabled);
+
+        $(document).on("change", switchSelector, function () {
+            var enabled = $(this).is(":checked");
+            body.toggleClass("dark-mode", enabled);
+            localStorage.setItem(storageKey, enabled ? "enabled" : "disabled");
+        });
+    }
+
     function bindNavbarToggle() {
         $(document).on("click", ".nav a", function () {
             $(".navbar-collapse").removeClass("in");
@@ -138,6 +156,7 @@
         animateContentOnViewport();
         bindSmoothScroll();
         bindThemeSwitcher();
+        bindDarkModeSwitch();
         bindNavbarToggle();
         bindPortfolioFilter();
         bindScrollTopButton();

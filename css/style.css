@@ -1328,3 +1328,187 @@ textarea {
     max-width: 100%;
     height: auto;
   }
+
+.nav-dark-mode {
+    padding: 20px 10px 0;
+}
+.mode-switch {
+    position: relative;
+    display: inline-flex;
+    width: 72px;
+    height: 28px;
+    margin: 0;
+    cursor: pointer;
+}
+.mode-switch input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.mode-switch-track {
+    width: 100%;
+    height: 100%;
+    background: #ff5a00;
+    border-radius: 999px;
+    transition: background .25s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .25);
+}
+.mode-switch-thumb {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
+    transition: transform .25s ease;
+}
+.mode-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 15px;
+    line-height: 1;
+}
+.mode-icon-sun {
+    left: 11px;
+}
+.mode-icon-moon {
+    right: 10px;
+    opacity: .45;
+}
+.mode-switch input:checked + .mode-switch-track {
+    background: #101325;
+}
+.mode-switch input:checked + .mode-switch-track .mode-icon-sun {
+    opacity: .45;
+}
+.mode-switch input:checked + .mode-switch-track .mode-icon-moon {
+    opacity: 1;
+}
+.mode-switch input:checked ~ .mode-switch-thumb {
+    transform: translateX(-44px);
+}
+
+
+.header.navbar.navbar-small .nav-dark-mode {
+    padding-top: 11px;
+}
+
+@media (max-width: 767px) {
+    .nav-dark-mode {
+        padding: 10px 15px 15px;
+    }
+}
+
+body.dark-mode {
+    background: #111318;
+    color: #e0e6ed;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode .content-heading,
+body.dark-mode .aboutus ul li,
+body.dark-mode #p-footer-desc,
+body.dark-mode .contact-info p,
+body.dark-mode .contact-info a {
+    color: #e0e6ed;
+}
+body.dark-mode .about,
+body.dark-mode .services,
+body.dark-mode .portfolio,
+body.dark-mode .work-experience,
+body.dark-mode .contactus,
+body.dark-mode .footer,
+body.dark-mode .ourteam .info,
+body.dark-mode .about .about-bg .aboutus {
+    background: #171b22;
+}
+body.dark-mode .header.navbar.navbar-small {
+    background: #171b22;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+body.dark-mode .header.navbar.navbar-small .navbar-brand,
+body.dark-mode .header.navbar.navbar-small .navbar-nav > li > a,
+body.dark-mode .header.navbar.navbar-small .navbar-toggle i {
+    color: #f4f6f8;
+}
+body.dark-mode .divider .outer-line,
+body.dark-mode hr {
+    border-color: rgba(255, 255, 255, .2);
+}
+body.dark-mode .theme-settings .theme-settings-content,
+body.dark-mode .theme-settings .theme-collapse-btn {
+    background: #1e232b;
+    color: #f4f6f8;
+}
+body.dark-mode .theme-mode-label {
+    color: #f4f6f8;
+}
+body.dark-mode .white_overlay_right,
+body.dark-mode .white_overlay_left {
+    background-color: rgba(17, 19, 24, 0.8);
+}
+body.dark-mode .custom-tooltiptext {
+    background-color: #0d1117;
+    color: #f4f6f8;
+}
+body.dark-mode .content .content-desc,
+body.dark-mode #services .content-desc,
+body.dark-mode .portfolio .content-desc,
+body.dark-mode .contactus .content-desc,
+body.dark-mode .divider .fa,
+body.dark-mode .about .about-bg .aboutus h3,
+body.dark-mode .aboutus .item-box h4,
+body.dark-mode .filter-button,
+body.dark-mode .service-item-box i,
+body.dark-mode .service-item-box h3 {
+    color: #f4f6f8;
+}
+body.dark-mode .filter-button {
+    background: transparent;
+    border: 1px solid transparent;
+}
+body.dark-mode .service-item-box,
+body.dark-mode .ourteam {
+    border-color: rgba(255, 255, 255, .25);
+}
+body.dark-mode .service-item-box .icon {
+    background: #0d1117;
+}
+body.dark-mode .service-item-box p,
+body.dark-mode .ourteam .social a,
+body.dark-mode .ourteam .name,
+body.dark-mode .ourteam .title,
+body.dark-mode .profile-summary {
+    color: #e0e6ed;
+}
+body.dark-mode #portfolio .row {
+    margin: 0 -8px;
+}
+body.dark-mode #portfolio .portfolio_item {
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+body.dark-mode #portfolio .portfolio_item > a {
+    display: block;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
+body.dark-mode #portfolio .portfolio_item img {
+    width: 100%;
+    border-radius: 0;
+    background: transparent;
+}
+body.dark-mode #portfolio .portfolio-filter {
+    margin-bottom: 14px;
+}
