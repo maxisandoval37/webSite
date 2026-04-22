@@ -1432,7 +1432,8 @@ body.dark-mode .about .about-bg .aboutus {
 }
 body.dark-mode .header.navbar.navbar-small {
     background: #171b22;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
 }
 body.dark-mode .header.navbar.navbar-small .navbar-brand,
 body.dark-mode .header.navbar.navbar-small .navbar-nav > li > a,
