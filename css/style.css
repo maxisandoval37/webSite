@@ -1472,8 +1472,8 @@ body.dark-mode .service-item-box h3 {
     color: #f4f6f8;
 }
 body.dark-mode .filter-button {
-    background: #262c36;
-    border: 1px solid #3a4250;
+    background: transparent;
+    border: 1px solid transparent;
 }
 body.dark-mode .service-item-box,
 body.dark-mode .ourteam {
@@ -1498,16 +1498,16 @@ body.dark-mode #portfolio .portfolio_item {
 }
 body.dark-mode #portfolio .portfolio_item > a {
     display: block;
-    padding: 8px;
-    border-radius: 8px;
-    border: 1px solid #303b4f;
-    background: #202734;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .25);
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
 }
 body.dark-mode #portfolio .portfolio_item img {
     width: 100%;
-    border-radius: 5px;
-    background: #f0f0f0;
+    border-radius: 0;
+    background: transparent;
 }
 body.dark-mode #portfolio .portfolio-filter {
     margin-bottom: 14px;
